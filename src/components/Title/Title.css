@@ -1,0 +1,114 @@
+.title{
+    display: flex;
+    max-width: 1440px;
+    margin: 0 100px 92px 40px;
+    height: 700px;
+    position: relative;
+    background-image: url(../../images/Mask-Group.svg);
+    background-repeat: no-repeat;
+    background-size: 991px 700px;
+    background-position: right;
+    align-items: center;
+    overflow: hidden;
+}
+
+.title__block{
+    position: absolute;
+    left: -40px;
+    display: flex;
+    height: 445px;
+    background: rgba(255, 255, 255, 0.6);
+    flex-direction: column;
+    width: 570px;
+    align-items: end;
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+
+.title__image-block{
+    width: 100px;
+    position: absolute;
+    top: -76px;
+    left: 137px;
+}
+
+.title__title-block{
+    font-family: 'NotoSerifJP';
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 50px;
+    color: #244D4D;
+    margin: 46px 0 20px 97px;
+    text-align: left;
+}
+
+.title__subtitle-block{
+    font-family: "Glegoo";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(95, 95, 100, 1);
+    text-align: left;
+    margin: 0 0 0 97px;
+}
+@media screen and (max-width: 1023px){
+    .title{
+        margin: 0 60px 92px 60px;
+        height: 500px;
+        background-size: cover;
+        justify-content: center;
+    }
+    .title__block{
+        position:unset;
+        height: 445px;
+        width: 570px;
+        align-items: center;
+        justify-content: center;
+    }
+    .title__image-block{
+        top: -25px;
+        left: -35px;
+    }
+    
+    .title__title-block{
+        text-align: center;
+        font-size: 45px;
+        line-height: 30px;
+        margin: 0;
+    }
+    
+    .title__subtitle-block{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        margin: 25px 0 0 0;
+    }
+}
+@media screen and (max-width: 767px){
+    .title{
+        margin: 0 30px 52px 30px;
+        height: 250px;
+        background-repeat: repeat;
+        object-fit: cover;
+        background-size: 100%;
+    }
+    .title__block{
+        height: 400px;
+        width: 260px;
+    }
+    .title__image-block{
+        display: none;
+    }
+    
+    .title__title-block{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    .title__subtitle-block{
+        font-size: 15px;
+        line-height: 24px;
+        margin: 15px 0 0 0;
+    }
+}

@@ -1,0 +1,320 @@
+.products{
+    display: flex;
+    max-width: 1440px;
+    margin: 0 95px;
+    flex-direction: column;
+    align-items: center;
+}
+.products__title{
+    font-family: "NotoSerifJP";
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 72px;
+    margin: 50px 0 135px 0;
+    letter-spacing: calc(1em/100);
+    color: #244D4D;
+}
+
+.products__cards{
+    display: flex;
+    gap: 150px;
+}
+.products__card-cards{
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F6F6;
+    width: 310px;
+    text-align: center;
+    height: 305px;
+    position: relative;
+}
+.products__title-card{
+    margin: 19px 0 0 0;
+    font-family: "Glegoo";
+    font-size: 26px;
+    line-height: 46px;
+    font-weight: 400;
+    color: rgba(95, 95, 100, 1);
+}
+.products__button-card{
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0 0 0 25px;
+    text-align: left;
+    font-family: "Glegoo";
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+    color: rgba(95, 95, 100, 1);
+    cursor: pointer;
+}
+.products__subtitle-card{
+    display: none;
+    text-align: left;
+    margin: 0 8px;
+    margin-top: 50px;
+    font-family: "Glegoo";
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+}
+.products__image-card{
+    width: 260px;
+    height: 160px;
+    object-fit: cover;
+    margin: 0 25px;
+}
+.products__price-card{
+    position: absolute;
+    font-family: "Glegoo";
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+    margin: 0;
+    right: 5px;
+    bottom: 0;
+    color: rgba(95, 95, 100, 1);
+}
+
+.products__block{
+    display: flex;
+    gap: 25px;
+    margin-top: 50px;
+}
+.products__card-block{
+    background-color: #F4F6F6;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 350px;
+    position: relative;
+}
+.products__title-block{
+    margin: 19px 0 0 0;
+    text-align: center;
+    font-family: "Glegoo";
+    font-size: 30px;
+    line-height: 46px;
+    font-weight: 400;
+    color: rgba(95, 95, 100, 1); 
+}
+.products__subtitle-block{
+    display: none;
+    font-family: "Glegoo";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #244D4D;
+    text-align: start;
+    margin: 50px 10px 0 10px;
+}
+
+.products__quote-block{
+    display: none;
+    font-family: "Glegoo";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #244D4D;
+    text-align: start;
+    margin: 0 10px;
+}
+.products__image-block{
+    width: 350px;
+    height: 220px;
+    margin: 0 25px;
+}
+.activated{
+    margin-bottom: 144px;
+}
+.active{
+    display: block;
+}
+.actived{
+    margin-bottom: 150px;
+}
+@media screen and (max-width: 1279px){
+    .products__cards{
+        gap: 50px;
+    }
+    .products__subtitle-card{
+        margin-top: 0;
+    }
+    .products__card-cards{
+        width: 250px;
+        height: 255px;
+    }
+    .products__image-card{
+        width: 200px;
+        height: 160px;
+        object-fit: cover;
+        margin: 0 25px;
+    }
+    .products__price-card{
+        bottom: -5px;
+    }
+    .products__card-block{
+        width: 300px;
+        height: 250px;
+    }
+    .products__image-block{
+        width: 250px;
+    }
+    .products__subtitle-block{
+        margin-top: 0;
+    }
+    .activated{
+        margin-bottom: 180px;
+    }
+    .actived{
+        margin-bottom: 252px;
+    }
+}
+@media screen and (max-width: 1023px){
+    .products__card-cards{
+        width: 240px;
+    }
+    .products__block{
+        justify-content: center;
+        gap: 5px;
+        margin-top: 50px;
+    }
+    .products__card-block{
+        width: 240px;
+        height: 250px;
+    }
+    .products__image-block{
+        width: 200px;
+        height: 160px;
+        object-fit: cover;
+    }
+    .products__title-block{
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .products__subtitle-block{
+        font-size: 17px;
+        line-height: 24px;
+        margin-top: 65px;
+    }
+    
+    .products__quote-block{
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .products__title-card{
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .products__button-card{
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .products__subtitle-card{
+        margin-top: 25px;
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .products__price-card{
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .products__title{
+        font-size: 36px;
+        line-height: 50px;
+        margin: 50px 0 75px 0;
+    }
+    .actived{
+        margin-bottom: 170px;
+    }
+    .activated{
+        margin-bottom: 96px;
+    }
+}
+@media screen and (max-width: 767px){
+    .products__cards{
+        gap: 5px;
+        justify-content: center;
+    }
+    .products{
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    .products__card-cards{
+        width: 150px;
+        height: 150px;
+    }
+    .products__image-card{
+        width: 130px;
+        height: 80px;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+    .products__block{
+        gap: 5px;
+        margin-top: 15px;
+    }
+    .products__card-block{
+        width: 100px;
+        height: 100px;
+    }
+    .products__image-block{
+        width: 80px;
+        height: 50px;
+        margin: 0 auto;
+    }
+    .products__title-block{
+        font-size: 15px;
+        line-height: 18px;
+        margin: 5px auto;
+    }
+    .products__subtitle-block{
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 6px;
+    }
+    
+    .products__quote-block{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .products__title-card{
+        font-size: 15px;
+        line-height: 20px;
+        margin: 5px auto;
+    }
+    .products__button-card{
+        font-size: 12px;
+        line-height: 18px;
+        margin: 0;
+        margin-left: 10px;
+        text-align: left;
+    }
+    .products__subtitle-card{
+        margin-top: 25px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .products__price-card{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .products__title{
+        font-size: 20px;
+        line-height: 24px;
+        margin: 25px auto;
+    }
+    .actived{
+        margin-bottom: 250px;
+    }
+    .activated{
+        margin-bottom: 100px;
+    }
+    .active{
+        display: block;
+        margin-left: 10px;
+    }
+}

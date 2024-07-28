@@ -1,0 +1,287 @@
+.information{
+    display: flex;
+    max-width: 1440px;
+    margin: 93px 135px 0 135px;
+    flex-direction: column;
+}
+.information__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.information__block-header{
+    width: 470px;
+}
+.information__title-block{
+    font-family: 'NotoSerifJP';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 76px;
+    color: #244D4D;
+    margin: 0;
+}
+.information__subtitle-block{
+    margin: 0;
+    margin-top: 20px;
+    font-family: 'Glegoo';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #5F5F64;
+}
+.information__quote-header{
+    font-family: 'Glegoo';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    color: #5F5F64;
+    border-radius: 5px;
+    background-color: rgba(244, 246, 246, 1);
+    margin: 0;
+    padding: 15px 19px;
+    box-shadow: 0px 1.85px 3.15px 0px rgba(36, 77, 77, 0.02);
+    box-shadow: 0px 8.15px 6.52px 0px rgba(36, 77, 77, 0.04);
+    box-shadow: 0px 20px 13px 0px rgba(36, 77, 77, 0.05);
+    box-shadow: 0px 38.52px 25.48px 0px rgba(36, 77, 77, 0.06);
+}
+.information__about{
+    display: flex;
+    gap: 35px;
+    margin-top: 65px;
+}
+.information__cards-about{
+    display: grid;
+    grid-template-columns: repeat(2, 275px);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 52px;
+    column-gap: 60px;
+}
+.information__card-about{
+    display: flex;
+    flex-direction: column;
+}
+.information__title-card{
+    font-family: 'Glegoo';
+    margin: 0;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 60px;
+    color: rgba(36, 77, 77, 1);
+}
+.information__subtitle-card{
+    margin: 0;
+    font-family: 'Glegoo';
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 60px;
+    color: rgba(36, 77, 77, 1);
+}
+.information__quote-card{
+    font-family: 'Glegoo';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: calc(1em/20);
+    color: rgba(36, 77, 77, 1);
+}
+.information__images-about{
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(9, 40px);
+    row-gap: 15px;
+    column-gap:25px;
+}
+.information__image-about{
+    object-fit: cover;
+    max-width: 250px;
+}
+#image1{
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+#image2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 9;
+}
+#image3{
+    margin-top: 10px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 8;
+    height: 150px;
+}
+#image4{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+@media screen and (max-width: 1321px){
+    .information__about{
+        gap:15px;
+    }
+    .information__images-about{
+        row-gap: 0;
+        column-gap:10px;
+    }
+    #image2{
+        margin-top: 40px;
+    }
+    #image3{
+        margin-top: 80px;
+    }
+    .information__cards-about{
+        row-gap: 20px;
+        column-gap: 10px;
+    }
+}
+@media screen and (max-width: 1279px){
+    .information{
+        margin-right: 90px;
+        margin-left: 90px;
+    }
+    .information__image-about{
+        width: 200px;
+    }
+    .information__images-about{
+        grid-template-columns: repeat(2, 200px);
+    }
+    #image2{
+        margin-top: 0;
+    }
+    #image3{
+        margin-top: 0;
+    }
+    .information__images-about{
+        row-gap: 5px;
+    }
+    .information__cards-about{
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(2, 240px);
+        row-gap: 0;
+        
+    }
+    .information__about{
+        margin-top: 45px;
+        justify-content: center;
+    }
+    .information__subtitle-card{
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .information__title-card{
+        font-size: 25px;
+        line-height: 40px;
+    }
+}
+@media screen and (max-width: 1023px){
+    .information__about{
+        flex-direction: column;
+        align-items: center;
+    }
+    .information__cards-about{
+        grid-template-rows: repeat(2, 200px);
+        
+    }
+    .information{
+        margin: 93px 80px 0 80px;
+        flex-direction: column;
+    }
+    .information__header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .information__block-header{
+        width: 270px;
+    }
+    .information__title-block{
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .information__subtitle-block{
+        margin-top: 10px;
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .information__quote-header{
+        font-size: 15px;
+        margin-left: 10px;
+        line-height: 24px;
+        padding: 12px 16px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .information__about{
+        flex-direction: column;
+        align-items: center;
+    }
+    .information__cards-about{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 290px;
+        
+    }
+    .information__card-about{
+        margin: 0 auto;
+    }
+    .information{
+        margin: 50px auto;
+        max-width: 320px;
+    }
+    .information__header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    
+    }
+    .information__block-header{
+        width: 180px;
+    }
+    .information__title-block{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .information__subtitle-block{
+        margin-top: 5px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .information__quote-header{
+        font-size: 13px;
+        margin-left: 0;
+        line-height: 18px;
+        padding: 10px 15px;
+    }
+    .information__title-card{
+        margin: 0;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .information__subtitle-card{
+        margin: 0;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .information__quote-card{
+        margin: 0;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .information__images-about{
+        display: flex;
+        flex-direction: column;
+    }
+    .information__image-about{
+        width: 290px;
+    }
+}

@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Glegoo";
+  src: url(../fonts/Glegoo-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Glegoo";
+  src: url(../fonts/Glegoo-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "NotoSerifJP";
+  src: url(../fonts/NotoSerifJP-Black.otf) format("truetype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "NotoSerifJP";
+  src: url(../fonts/NotoSerifJP-Bold.otf) format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "NotoSerifJP";
+  src: url(../fonts/NotoSerifJP-SemiBold.otf) format("truetype");
+  font-weight: 600;
+}
