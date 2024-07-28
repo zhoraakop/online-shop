@@ -278,10 +278,6 @@
         line-height: 18px;
     }
     .information__images-about{
-        display: flex;
-        flex-direction: column;
-    }
-    .information__image-about{
-        width: 290px;
+        display: none;
     }
 }
